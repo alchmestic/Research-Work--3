@@ -1,0 +1,22 @@
+What is an IDE and compiler? List out differences.     
+       An IDE typically contains a code editor, a compiler or interpreter, and a debugger, accessed through a single graphical user interface (GUI).An IDE provides an environment to create, build and test a software application.
+       A compiler is a special program that translates a programming language's source code into machine code, bytecode or another programming language.It translates text written in a given programming language (C/C++ or something else) and into machine code that can be executed by the computer/processor.
+       The main difference between IDE and compiler is that the IDE is a software suite that consists of tools required to develop and test software applications while the compiler is a program that translates the source code written in a high-level programming language into a low-level machine code
+              
+       
+What is Bootloader and how does it work?
+        A Bootloader is a program that allows you to load other programs via a more convenient interface like a standard USB cable.  When you power-up or reset your microcontroller board, the bootloader checks to see if there is an upload request.  If there is, it will upload the new program and burn it into Flash memory.  If not, it will start running the last program that you loaded.
+          
+          
+What do you understand by OTA update?
+        OTA (Over-The-Air) updates refer to the delivery of software updates wirelessly to devices such as smartphones, tablets, and smart home devices. With OTA updates, users can receive and install updates to their device's operating system, firmware, or other software components without having to connect the device to a computer.
+  
+List the differences between baremetal and RTOS programming?
+        baremetal programming is programming without an operating system to provide system level services. RTOS is a real time operating system, on an mcu it is not uncommon to find some ported to that mcu.
+        An RTOS has a relatively simple design, but unlike Bare Metal, it can start and stop different processes concurrently. 
+        RTOS has an ability to multitask. while baremetal has not ability to multitask.
+        
+        
+How to choose between baremetal and RTOS for project?
+        In general, choose bare-metal programming when the project is simple or, even more importantly, when the penalty for failure is high and choose an RTOS when there a lots of tasks, lots of desktop-style I/O, or a sophisticated user interface.
+        If your project requires real-time guarantees, a small memory footprint, and low overhead, a bare-metal solution may be the better choice. On the other hand, if your project requires a more complex and flexible software architecture, the use of multiple tasks or threads, and support for dynamic memory allocation, an RTOS solution may be the better choice.
